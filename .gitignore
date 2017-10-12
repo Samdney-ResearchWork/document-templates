@@ -1,1 +1,9 @@
+*.log
+*.aux
+*.toc
+*.out
+*.blg
+*.bbl
+makepdf
+
 mystuff/
