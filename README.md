@@ -1,2 +1,2 @@
 # document-templates
-Personal templates for different kinds of documents for research work. Feel free to use.
+Personal templates for different kinds of documents for research work and publications. Feel free to use.
