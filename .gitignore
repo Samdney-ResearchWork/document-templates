@@ -9,7 +9,13 @@
 *.out
 *.blg
 *.bbl
-*.bst
 *.ent
+*.cls
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.rpi
 makepdf
 mystuff/
