@@ -10,5 +10,6 @@
 *.blg
 *.bbl
 *.bst
+*.ent
 makepdf
 mystuff/
