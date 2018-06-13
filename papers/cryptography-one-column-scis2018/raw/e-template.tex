@@ -1,0 +1,49 @@
+% SCIS 2018 English manuscript (for LaTeX2e)
+\documentclass[a4paper]{article}
+\usepackage{scis2018e}
+% If you use LaTeX 2.09, delete the above two lines and remove '%' below.
+%\documentstyle[scis2018e]{jarticle}
+
+\begin{document}
+
+\title{
+  Title of This Paper     %The title of this paper
+}
+\author{
+  First Author           %The name of the first author
+  \thanks{
+    Affiliation1, Address1,   %The affiliation and address of the first author
+    (E-mail addresses are placed here if you like.)
+  }
+  \and
+  Second Author          %The name of the second author
+  \thanks{ %If this is same as the first author, write \samethanks{1}.
+    Affiliation2, Address2  %The affiliation and address of the second author
+  }
+}
+\abstract{
+  In this paper ....  % Abstract of this paper
+}
+\keywords{
+  keyword1, keyword2, ... %Index terms of this paper
+}
+
+\maketitle
+
+\section{The First Section}
+
+The contents of the first section.
+
+\section{The Second Section}
+
+The contents of the second section.
+
+\begin{thebibliography}{9}
+\bibitem{a}
+Authors, ``Title,'' {\em Journal}, Pages, etc...
+\bibitem{b}
+Authors, {\em Book title}, Publisher, Year, etc...
+\end{thebibliography}
+
+\end{document}
+% end of file
