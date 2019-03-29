@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{multibib}
+
+\newcites{papers}{Papers}
+\newcites{books}{Books}
+
+\usepackage{etoolbox}
+\BeforeBeginEnvironment{thebibliography}{%
+  \let\origsection\section% save original definition of \section
+  \let\section\subsection%  make \section behave like \subsection
+}
+\AfterEndEnvironment{thebibliography}{%
+  \let\section\origsection% restore original definition of \section
+}
+
+% ======================================================================
+\begin{document}
+% ======================================================================
+\section{My section}
+How you cite a paper \citepapers{paper01}. And this is how you cite a book \citebooks{book02}.
+% ======================================================================
+\section{Bibliography}
+
+\nocitepapers{*}
+\bibliographystylepapers{alpha}
+\bibliographypapers{papers}
+
+\nocitebooks{*}
+\bibliographystylebooks{plain}
+\bibliographybooks{books}
+% ======================================================================
+\end{document}
+% ======================================================================
