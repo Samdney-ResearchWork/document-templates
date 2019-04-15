@@ -1,0 +1,133 @@
+% Template for Electronic Journal of Graph Theory and Applications
+% This file must be in the same folder as EJGTAart.sty and EJGTAhead.jpg
+
+\documentclass[12pt]{elsarticle}
+\usepackage[left=1in,right=1in, top=1.2in,bottom=1.2in]{geometry}
+\usepackage{EJGTAart}
+\usepackage{times}
+\usepackage{amssymb,amsthm,latexsym,amsmath,epsfig,pgf}
+
+% Set the volume if you know.
+\volume{{\bf x} (x)}
+
+% Set the starting page
+\firstpage{1}
+
+% Title (or short title) and author name for the header
+\runauth{
+Title of the manuscript
+\hspace{2ex} $\arrowvert$\hspace{2ex}
+Edy Tri Baskoro et al.}
+
+
+% Put new theorem or any other settings for your document here
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{theorem A}{Theorem A}
+\newtheorem*{theorem B}{N\"olker's Theorem}
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{problem}{Problem}
+\newtheorem*{question}{Question}
+\newtheorem {conjecture}{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+\theoremstyle{remark}
+\newtheorem{remarks}{Remarks}
+\begin{document}
+
+\begin{frontmatter}
+% Write your paper title here
+\papertitle{Title of the Manuscript}
+
+%% use optional labels to link authors explicitly to addresses. The label may be more than one, use comma to separate
+
+%\author[label1,label]{Edy Tri Baskoro${}^1$}
+
+\author[label1]{Edy Tri Baskoro}
+\author[label2]{Joe Ryan}
+\author[label3]{Kiki A. Sugeng}
+
+\address[label1]{\small Combinatorial Mathematics Research Group,\\
+Faculty of Mathematics and Natural Sciences, Institut Teknologi Bandung,\\
+Jalan Ganesa 10 Bandung, Indonesia}
+\address[label2]{School of Electrical Engineering and Computer Science,
+The University of Newcatle, Australia}
+\address[label3]{Departments of Mathematics,
+University of Indonesia,
+Depok - Indonesia
+
+\vspace*{2.5ex} 
+ {\normalfont ebaskoro@math.itb.ac.id, joe.ryan@newcastle.edu.au, kiki@sci.ui.ac.id}
+ }
+
+\begin{abstract}
+Electronic Journal of Graph Theory and Apllications ({\bf EJGTA}) is a
+fully-refereed electronic journal. ({\bf EJGTA}) is devoted to the
+high quality publication of current research developments in the
+fields of graph theory, and in all interdisciplinary areas in
+mathematics which use graph methods. 
+
+\let\thefootnote\relax\footnotetext{Received: xx xxxxx 20xx,\quad
+  Accepted: xx xxxxx 20xx.\\[3ex]
+  }
+  
+\end{abstract}
+
+\begin{keyword}
+% Separate keyword by \sep
+separate \sep keyword \sep by this \sep command
+
+% Write the classification number
+Mathematics Subject Classification : xxxxx
+
+\end{keyword}
+
+\end{frontmatter}
+
+%% Main text
+\section{This is a numbered first-level section head}
+This is an example of a numbered first-level heading.
+\subsection{This is a numbered second-level section head}
+This is an example of a numbered second-level heading.
+
+\subsection*{This is an unnumbered second-level section head}
+This is an example of an unnumbered second-level heading.
+
+\subsubsection{This is a numbered third-level section head}
+This is an example of a numbered third-level heading.
+\begin{lemma}
+Example of the lemma
+\end{lemma}
+
+\begin{remark}
+This is an example of a remark element.
+\end{remark}
+
+\begin{theorem}
+This is an example of a theorem.
+\end{theorem}
+
+\begin{theorem}[XXX Theorem]
+This is an example of a theorem with a parenthetical note in the
+heading.
+\end{theorem}
+
+
+\section*{Acknowledgement} 
+Write support, acknowledgment, dedicatory, and grants here.
+
+\section*{References} 
+\begin{thebibliography}{99}
+\bibitem{Anholcer-309-09} M. Anholcer, M. Kalkowski and J. Przybylo, A new upper bound for the total vertex irregularity strength of graphs, \textit{Discrete Math.} \textbf{309} (2009), 6316--6317.
+\bibitem{Brandt-57-08} S. Brandt, J. Mi\v{s}kuf and D. Rautenbach, On a~conjecture about edge irregular total labellings, {\it J. Graph Theory}, \textbf{57} (2008), 333--343.
+\bibitem{Chartrand-64-88} G. Chartrand, M.S. Jacobson, J. Lehel, O.R. Oellermann, S. Ruiz and F. Saba, Irregular networks, \textit{Congr. Numer.} \textbf{64} (1988), 187--192.
+\bibitem{Ivanco-26-06} J. Ivan\v{c}o and S. Jendro\v{l}, Total edge irregularity strength of trees, {\it Discussiones Math. Graph Theory}  {\bf 26} (2006), 449--456.
+\bibitem{Jendrol-28-07} S. Jendro\v{l}, J.Mi\v{s}kuf and R. Sot\'{a}k, Total edge irregularity strength of complete and complete bipartite graphs, {\it Electron. Notes Discrete Math.}  {\bf 28} (2007), 281--285.
+\bibitem{Jendrol-310-10} S. Jendro\v{l}, J.Mi\v{s}kuf, and R. Sot\'{a}k, Total edge irregularity strength of complete graphs and complete bipartite graphs, {\it Discrete Math.}, {\bf 310} (2010), 400--407.
+\end{thebibliography}
+
+\end{document}
+
+%%
+%% End of file `ecrc-template.tex'. 
